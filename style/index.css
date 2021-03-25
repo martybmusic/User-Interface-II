@@ -58,6 +58,7 @@ body {
     background-color:papayawhip;
 }
 
+
 header {
     background-color: #48bbe1;
     height: 100%;
@@ -124,17 +125,23 @@ button {
     font-weight: 300;
     letter-spacing: .7px;
     line-height: 120%;
-    
+
 }
 
 .flexbox2 {
     display:flex;
-    justify-content: space-between;
-    margin-left: 12.5%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: center;
+    width: 100%;
 }
 
-.flexbox2 img {
-    width: 43%;
+.flexbox2 .phototext {
+   width: 180px;
+}
+
+.flexbox2 .phototext img {
+    max-width: 100px;
 }
 
 .flexbox2 p {
@@ -142,7 +149,7 @@ button {
     padding-bottom: 5%;
     font-weight: 300;
     letter-spacing: .7px;
-    margin-left: 12.5%;
+
 }
 
 
@@ -157,3 +164,35 @@ footer p {
     letter-spacing: .7px;
     padding-top: 2%;
 }
+
+@media only screen and (max-width:600px) {
+
+    header {
+        text-align: center;
+    }
+ 
+    .topflex {
+        justify-content: center;
+        padding: 0 15% 0 15%;
+    }
+ 
+    .flexbox {
+        flex-direction: column;
+        align-items: center;
+    }
+ 
+    .flexbox img {
+        width: 86%;
+    }
+ 
+ }
+ 
+ @media only screen and (max-width:400px) {
+ 
+     .topflex {
+         flex-direction: column;
+         padding: 0 28% 2% 28%;
+     }
+ 
+}
+ 
